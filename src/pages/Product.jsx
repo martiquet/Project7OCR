@@ -1,11 +1,13 @@
-import '../style/App.css';
-import Header from '../components/Header'
+import Productsdata from "../data.json"
+import Banner from "../components/Banner"
 
 
-function App() {
+
+
+const product = () => {
     return (
-    <p> la bite 2 </p>
+    <Banner />
     )
 }
 
-export default App;
+export default product;

@@ -1,0 +1,56 @@
+section {
+    background: #F7F7F7;
+    border-radius: 25px;
+    padding: 56px 50px 6px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.thumbnails {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    overflow: hidden;
+    object-fit: cover;
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .productImage {
+            object-fit: cover;
+            transform: scale(1);
+            width: inherit;
+            height: inherit;
+        }
+    
+    .titleBackground {
+        position: absolute;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        width: 100%;
+   
+    h2 {
+        
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: left;
+        font-family: Montserrat,sans-serif;
+        object-fit: contain;
+        overflow: hidden;
+        margin: 20px;
+        width: 80%;
+    
+    
+    }
+}
+}
+
+

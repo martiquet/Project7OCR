@@ -20,7 +20,7 @@ function App () {
                     <Routes>
                         <Route index element={<Home />} />
                         <Route path="about" element={<About />} />
-                        <Route path="products/:productId" element={<Product />} />
+                        <Route path="/:productId" element={<Product />} />
                         {/* <Route path="/kaza" element={<Route to="/" replace />} /> */}
                         <Route path="*" element={<Notfound />} />
                     </Routes>
