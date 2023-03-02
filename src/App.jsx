@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import "./style/App.css"
 import "./style/main.scss"
+import "./style/normalize.css"
 
 import Home from './pages/Home'
 import About from './pages/About'
@@ -19,7 +20,7 @@ function App () {
                     <Layout>
                     <Routes>
                         <Route index element={<Home />} />
-                        <Route path="about" element={<About />} />
+                        <Route path="About" element={<About />} />
                         <Route path="/:productId" element={<Product />} />
                         {/* <Route path="/kaza" element={<Route to="/" replace />} /> */}
                         <Route path="*" element={<Notfound />} />

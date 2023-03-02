@@ -1,9 +1,20 @@
+import React from 'react';
 import '../style/App.css';
-import Header from '../components/Header'
+import Datacollapse from "../about.json"
+import Collapse from "../components/Collapse"
+import Bannerabout from "../components/Bannerabout"
 
-
-function App() {
-    return <p> la bite 1</p>
+const About = () => {
+    return (
+        <>
+        <Bannerabout/>
+        <div className="collapseparent">
+            {Datacollapse.map((data) =>
+                <Collapse data={data}/>
+            )}
+        </div>
+        </>
+    )
 }
 
-export default App;
+export default About;

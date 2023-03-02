@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+header {
+    padding: 40px 0 0;
+    width: 90%;
+    margin: auto;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__link {
+            color: #FF6060;
+            font-weight: 500;
+            font-size: 24px;
+            font-family: Montserrat,sans-serif;
+        }
+
+        .nav__link:last-of-type {
+            margin-left: 57px;
+            
+        }
+
+       
+    }
+
+}
+
+footer {
+    width: 100%;
+    background: black;
+    padding-bottom: 29px;
+    img {
+        margin-top: 66px;
+    }
+    p {
+        color: white;
+        
+    }
+    }
