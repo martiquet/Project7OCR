@@ -19,11 +19,11 @@ function App () {
                 <Router>
                     <Layout>
                     <Routes>
-                        <Route index element={<Home />} />
-                        <Route path="About" element={<About />} />
-                        <Route path="/:productId" element={<Product />} />
-                        {/* <Route path="/kaza" element={<Route to="/" replace />} /> */}
                         <Route path="*" element={<Notfound />} />
+                        <Route index element={<Home />} />
+                        <Route path="/About" element={<About />} />
+                        <Route path="/product/:productId" element={<Product />} />
+                        <Route path="/kaza" element={<Route to="/" replace />} />
                     </Routes>
                     </Layout>
                 </Router>
