@@ -21,6 +21,7 @@
     }
 }
 
+
 .collapse__title {
     height: 47px;
     background-color: #ff6060;
@@ -35,6 +36,9 @@
     
 }
 
+.collapsefirst {
+    margin-bottom: 35px;
+}
 .collapse__texte {
     font-size: 24px;
     font-weight: 400;
@@ -44,6 +48,23 @@
     text-align: left;
     padding: 27px 27px 19px 18px;
     margin-bottom: 33px;
+    margin-top: -35px;
+    transition: all 0.5s ease-in-out
     
     
+    
+}
+
+.opentexte {
+    transition: all 0.5s ease-in-out
+}
+
+.vektor {
+    transform: rotate(0deg);
+    transition: all ease 0.5s;
+}
+
+.openvektor {
+    transform: rotate(180deg);
+    transition: all ease 0.5s;
 }

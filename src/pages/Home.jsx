@@ -13,7 +13,7 @@ function App() {
         <Banner />
         <section className="home__product">
             {Dataproduct.map((product) =>
-                <Productcard product={product}/>
+                <Productcard key={product.id} product={product}/>
             )}
         </section>    
         </>
