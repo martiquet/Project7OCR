@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom"
 import Slide from "../components/Slideproduct"
 import React from "react"
 import Notfound from "../pages/Notfound"
+import Productitems from "../components/Product"
 
 
 
@@ -11,16 +12,18 @@ import Notfound from "../pages/Notfound"
 
 const Product = () => {
     const {productId} = useParams()
-    const product = Productsdata.find((product) => product.id === productId)
+    const singleProduct = Productsdata.find((product) => product.id === productId)
 
-    if (!product) {
+    if (!singleProduct) {
         return(
             <Notfound/>
         )
     }
     return (
-    <Slide pictures={product.pictures}/>
-        
+    <>
+    <Slide pictures={singleProduct.pictures}/>
+    <Productitems product={singleProduct}/>
+    </>
     )
 }
 

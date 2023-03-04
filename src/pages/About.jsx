@@ -10,7 +10,7 @@ const About = () => {
         <Bannerabout/>
         <div className="collapseparent">
             {Datacollapse.map((data) =>
-                <Collapse key={data.title} data={data}/>
+                <Collapse key={data.title} title={data.title} description={data.description}/>
             )}
         </div>
         </>

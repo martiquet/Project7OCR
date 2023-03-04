@@ -1,20 +1,20 @@
 import React from "react";
 import Leftarrow from "../assets/leftarrow.svg"
 import Rightarrow from "../assets/rightarrow.svg"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 
 const Slide = ({pictures}) => {
     const [index, setIndex] = useState(0);
     const next = () => {
-        if (!(index + 1 > pictures.lenght))
-        setIndex(index + 1)
-        else setIndex[0]
+        if (index + 1 > pictures.length - 1)
+        setIndex(0)
+        else setIndex(index + 1)
     }
     const previous = () => {
         if (index - 1 < 0)
-        setIndex[pictures.lenght - 1]
+        setIndex(pictures.length - 1)
         else setIndex(index - 1)
     }
 
