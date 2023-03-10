@@ -15,7 +15,7 @@ const Collapse = (props) => {
             <div  onClick={toggle} className="collapse collapsefirst ">
                 <h2 className={`collapse__title ${props.isProduct ? "collapse__product" : ""}`}> {props.title}
                 </h2>
-                <img src={`{Vectordown} ${open ? Vectorup : ""}`} alt="" className={`vektor ${open ? "openvektor" : ""}`}/>
+                <img src={open ? Vectorup : Vectordown} alt="" className={`vektor ${open ? "openvektor" : ""}`}/>
             </div>
             { open && (
             <div className={`collapse__content ${props.isProduct ? "description__product" : ""}`}>

@@ -41,37 +41,7 @@
     margin-bottom: 33px;
 }
 
-.slide {
-    max-width: 1240px;
-    width: 1240px;
-    height: 415px;
-    position: relative;
-    border-radius: 25px;
-    transition: ease-in-out .5s all;
-    
-    
-    
 
-    .pictures {
-        object-fit: cover;
-        border-radius: inherit;
-        width: 100%;
-        height: 100%;
-        position: center;
-    }
-
-    .leftarrow {
-        position: absolute;
-        left: 23px;
-        top : 156px
-    }
-
-    .rightarrow {
-        position: absolute;
-        right: 23px;
-        top: 156px;
-    }
-}
 
 @media screen and (max-width:430px) {
     .bannerHome {

@@ -56,7 +56,7 @@ main {
 
 
 footer {
-    min-width: 1440px;
+    width: 100vw;
     background: black;
     height: 209px;
     display: flex;
@@ -78,13 +78,10 @@ footer {
         header {
             width: 100%;
             min-width: 200px;
-            
-            
         }
 
         main {
-            width: 100%;
-            
+            width: 100vw;   
         }
 
         footer {

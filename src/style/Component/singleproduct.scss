@@ -1,14 +1,26 @@
-.wrapperproduct {
-    margin-bottom: 20px;
+.wrapperleftright {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .wrapperleft {
+        margin-top: 30px;
+    }
+    .wrapperright {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
 
-.wrapperabout {
+.wrappersingleproduct {
     margin-bottom: 33px;
 }
 .productwrapper {
     width: 100%;
     max-width: 1240px;
-    margin-top: 24px;
 }
 
 .titlehost {
@@ -89,3 +101,85 @@
 
     align-items: center;
 }
+
+@media screen and (max-width: 430px) {
+    .productwrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .wrapperleftright {
+        flex-direction: column;
+        
+
+        .wrapperleft {
+
+            .titlelocation {
+                
+                h1 {
+                    font-size: 18px;
+                    line-height: 25.67px;
+                    text-align: left;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+        .wrapperright {
+            flex-direction: row-reverse;
+            align-items: center;
+            p {
+                font-size: 12px;
+                text-align: right;
+            }
+
+            .ratings {
+                img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+            .host {
+                 img {
+                    height: 32px;
+                    width: 32px;
+            }
+        }
+        }
+    }
+
+    .wrappersingleproduct {
+        flex-direction: column;
+        gap: 20px;
+        .collapse {
+            font-size: 13px;
+        }
+
+        .description__product {
+            min-height: min-content;
+            p {
+                padding-bottom: 0;
+                font-size: 12px;
+            }
+            ul {
+                padding-top: 17px;
+                padding-bottom: 0;
+                li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+    .listtag {
+        .tags {
+            height: 18px;
+            font-size: 10px;
+        }
+    }
+}
+    
+
