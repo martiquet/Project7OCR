@@ -1,13 +1,12 @@
 import React from "react";
 import Ratingempty from "../assets/ratingempty.svg"
-import { useState } from 'react'
-import Vector from "../assets/Vectordown.svg"
-import Hostimg from "../assets/imagehost.svg"
 import Rating from "../assets/ratings.svg"
 import Collapse from "../components/Collapse"
+import { useNavigate } from "react-router-dom";
 
 const Productitems = (props) => {
     const product=props.product
+    
     
     return (
         <div className="productwrapper">
@@ -41,7 +40,7 @@ const Productitems = (props) => {
             
             <div className="wrapper wrapperproduct wrappersingleproduct">
                     <Collapse title="Description" description={product.description} isProduct/>
-                    <Collapse title="Equipements" description={product.equipments} isProduct/>
+                    <Collapse layout title="Equipements" description={product.equipments} isProduct/>
             </div>
     </div>
         

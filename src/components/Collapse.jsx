@@ -1,6 +1,8 @@
 import React from "react";
-import Vector from "../assets/Vectordown.svg"
+import Vectordown from "../assets/Vectordown.svg"
+import Vectorup from "../assets/Vectorup.svg"
 import { useState } from 'react'
+
 
 
 const Collapse = (props) => {
@@ -10,10 +12,10 @@ const Collapse = (props) => {
 };
     return (
         <div className="wrapper wrapperabout">
-            <div onClick={toggle} className="collapse collapsefirst ">
+            <div  onClick={toggle} className="collapse collapsefirst ">
                 <h2 className={`collapse__title ${props.isProduct ? "collapse__product" : ""}`}> {props.title}
                 </h2>
-                <img src={Vector} alt="" className={`vektor ${open ? "openvektor" : ""}`}/>
+                <img src={`{Vectordown} ${open ? Vectorup : ""}`} alt="" className={`vektor ${open ? "openvektor" : ""}`}/>
             </div>
             { open && (
             <div className={`collapse__content ${props.isProduct ? "description__product" : ""}`}>

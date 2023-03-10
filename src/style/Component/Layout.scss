@@ -1,3 +1,8 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 li {
     list-style: none;
 }
@@ -10,19 +15,13 @@ a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-
-
 header {
     padding: 40px 0 0;
-    width: 90%;
+    max-width: 1240px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+
     nav {
         display: flex;
         flex-direction: row;
@@ -34,27 +33,85 @@ header {
             font-weight: 500;
             font-size: 24px;
             font-family: Montserrat,sans-serif;
+
+            &:hover {
+                text-decoration-line: underline;
+                
+            }
         }
 
         .nav__link:last-of-type {
             margin-left: 57px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+}
+
+
+footer {
+    min-width: 1440px;
+    background: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        margin-top: 66px;
+        margin-bottom: 28px;
+    }
+    p {
+        color: white;  
+    }
+    }
+
+
+    @media screen and (max-width: 1440px) {
+        header {
+            width: 100%;
+            min-width: 200px;
+            
             
         }
 
-       
+        main {
+            width: 100%;
+            
+        }
+
+        footer {
+            width: 100%;
+            min-width: 200px;
+        }
     }
 
-}
+    @media screen and (max-width:430px) {
+        header {
+            width: 90%;
+            
 
-footer {
-    width: 100%;
-    background: black;
-    padding-bottom: 29px;
-    img {
-        margin-top: 66px;
-    }
-    p {
-        color: white;
-        
-    }
+            .header__logo {
+                width: 145px;
+                height: 47px;
+            }
+            nav {
+                .nav__link {
+                    font-size: 12px;
+                    line-height: 17.11px;
+
+                }
+
+                .nav__link:last-of-type {
+                    margin-left: 10px;
+                }
+            }
+        }
     }

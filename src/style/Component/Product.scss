@@ -6,6 +6,7 @@ section {
     gap: 60px;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1240px;
 }
 
 .thumbnails {
@@ -18,9 +19,6 @@ section {
     align-items: flex-end;
     overflow: hidden;
     object-fit: cover;
-
-    
-
 
     .productImage {
             object-fit: cover;
@@ -49,6 +47,28 @@ section {
     
     }
 }
+}
+
+@media screen and (max-width:430px) {
+
+    section {
+        background: white;
+        width: 90%;
+        gap:20px;
+        padding: 0;
+        margin-bottom: 20px;
+        .product {
+            width: 100%;
+            .a {
+                width: 100%;
+            }
+        }
+    }
+
+    .thumbnails {
+        width: 100%;
+        height: 255px;
+    }
 }
 
 

@@ -18,11 +18,19 @@ const Slide = ({pictures}) => {
         else setIndex(index - 1)
     }
 
+    useEffect(() => {
+        setIndex(0)
+    }, [])
+    
     return (
         <div className="slide">
-            <img src={pictures[index]} alt="" className="pictures"/>
+            <img src={pictures[index]} alt="" className="pictures"/> 
+            {pictures.length > 1 ? (     
+            <>
             <img onClick={previous} src={Leftarrow} alt="" className="leftarrow"/>
             <img onClick={next} src={Rightarrow} alt="" className="rightarrow"/>
+            </>
+            ) : null }
         </div>
     )
     }
