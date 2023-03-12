@@ -71,7 +71,6 @@ section {
     }
 }
 
-
 @media screen and (min-width: 431px) and (max-width:920px) {
     section {
         background: white;
@@ -79,6 +78,7 @@ section {
         gap:20px;
         padding: 0;
         margin-bottom: 20px;
+        
         .product {
             width: 100%;
             .a {

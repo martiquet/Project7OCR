@@ -1,7 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 
-import "./style/App.css"
 import "./style/main.scss"
 import "./style/normalize.css"
 
