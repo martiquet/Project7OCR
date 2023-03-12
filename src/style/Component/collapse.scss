@@ -2,15 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     width: 85%;
 
     .wrapperabout {
+        max-width: 100%;
         width: 100%;
         margin-bottom: 20px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
     .wrapper {
@@ -115,9 +116,9 @@
     }
 }
 
-.opentexte {
-    transition: all 0.5s ease-in-out
-}
+// .opentexte {
+//     transition: all 0.5s ease-in-out
+// }
 
 // .vektor {
 //     transform: rotate(0deg);
@@ -168,6 +169,12 @@
     .collapse__texte {
         font-size: 12px;
         padding: 17px 7px 52px 11px;
+    }
+}
+
+@media screen and (min-width: 431px) and (max-width:920px) {
+    .collapse__title {
+        font-size: 3vw;
     }
 }
 

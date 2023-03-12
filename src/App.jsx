@@ -14,8 +14,6 @@ import Layout from './components/Layout'
 
 function App () {
     return (
-        <div>
-            <div className="App">
                 <Router>
                     <Layout>
                     <Routes>
@@ -27,8 +25,6 @@ function App () {
                     </Routes>
                     </Layout>
                 </Router>
-            </div>
-        </div>
     )
 }
 

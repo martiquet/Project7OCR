@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom"
 
+// Create page Notfound 
 const Notfound = () => {
     return (
         <div className="notfound">

@@ -2,11 +2,10 @@ import React from "react";
 import Ratingempty from "../assets/ratingempty.svg"
 import Rating from "../assets/ratings.svg"
 import Collapse from "./Collapse"
-import { useNavigate } from "react-router-dom";
 
+// Creat product component - get data from props
 const Productitems = (props) => {
     const product=props.product
-    
     
     return (
         <div className="productwrapper">
@@ -19,6 +18,7 @@ const Productitems = (props) => {
                 <div className="wrappertag">
                  <div className="taglist">
                     <ul className="listtag">
+                        {/* Get all tags from product data  */}
                         {product.tags.map((tag) => 
                         <li key={tag} className='tags'> {tag}
                         </li>
@@ -33,6 +33,7 @@ const Productitems = (props) => {
                         <img src={product.host.picture} className="host__image" alt="" />
                     </div>
                  <div className="ratings">
+                    {/* Ask for each pictures the value of rating in product data */}
                     <img src={product.rating >= 1 ? Rating : Ratingempty} alt="" />
                     <img src={product.rating >= 2 ? Rating : Ratingempty} alt="" />
                     <img src={product.rating >= 3 ? Rating : Ratingempty} alt="" />

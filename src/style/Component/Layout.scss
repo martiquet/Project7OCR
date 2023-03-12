@@ -1,8 +1,9 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+// body {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     height: 100%;
+// }
 li {
     list-style: none;
 }
@@ -15,12 +16,22 @@ a {
     text-decoration: none;
 }
 
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 header {
     padding: 40px 0 0;
     max-width: 1240px;
-    margin: auto;
+    width: 1240px;
     display: flex;
     justify-content: space-between;
+    
 
     nav {
         display: flex;
@@ -51,7 +62,10 @@ main {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    max-width: 1440px;
+    width: 1240px;
+    flex-grow: 1;
+    
+    
 }
 
 
@@ -64,6 +78,10 @@ footer {
     align-items: center;
     justify-content: center;
     
+    
+    
+    
+    
     img {
         margin-top: 66px;
         margin-bottom: 28px;
@@ -74,27 +92,12 @@ footer {
     }
 
 
-    @media screen and (max-width: 1440px) {
-        header {
-            width: 100%;
-            min-width: 200px;
-        }
-
-        main {
-            width: 100vw;   
-        }
-
-        footer {
-            width: 100%;
-            min-width: 200px;
-        }
-    }
+    
 
     @media screen and (max-width:430px) {
         header {
             width: 90%;
-            
-
+    
             .header__logo {
                 width: 145px;
                 height: 47px;
@@ -111,4 +114,56 @@ footer {
                 }
             }
         }
+        main {
+            width: 90%;
+            
+        }
+
+        footer {
+            width: 100%;
+            min-width: 200px;
+        }
     }
+
+    @media screen and (min-width: 431px) and (max-width:920px) {
+        header {
+            width: 90%;
+            min-width: 200px;
+            margin: auto;
+            .header__logo {
+                width: 145px;
+                height: 47px;
+            }
+
+            nav {
+                .nav__link {
+                    font-size: 3vw;
+                }
+                .nav__link:last-of-type {
+                    margin-left: 2.8vw;
+                }
+            }
+        }
+
+        main {
+            width: 90%;   
+        }
+
+        footer {
+            width: 100vw;
+            min-width: 200px;
+        }
+    }
+
+    @media screen and (min-width: 921px) and (max-width: 1440px) {
+        header {
+            width: 90%;
+        }
+
+        main {
+            width: 90%;
+        }
+    }
+
+
+

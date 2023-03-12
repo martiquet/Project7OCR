@@ -11,6 +11,7 @@ const Collapse = (props) => {
   setOPen(!open);
 };
     return (
+        
         <div className="wrapper wrapperabout">
             <div  onClick={toggle} className="collapse collapsefirst ">
                 <h2 className={`collapse__title ${props.isProduct ? "collapse__product" : ""}`}> {props.title}
@@ -22,14 +23,15 @@ const Collapse = (props) => {
                 {!Array.isArray(props.description) ? <p className={`collapse__texte ${open ? "opentexte" : ""}`}> {props.description}
                 </p> : <ul>
                     {props.description.map((equipements) =>
-                        <li> {equipements}
+                        <li key={equipements}> {equipements}
                         </li>
                     )}
                     </ul>}
             </div>
             )}
         </div>
-    )
+        
+    )   
 }
 
 export default Collapse

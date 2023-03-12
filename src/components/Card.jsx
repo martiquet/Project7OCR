@@ -3,13 +3,14 @@ import { Link } from "react-router-dom"
 
 
 const Productcard = (props) => {
+    const product = props.product
     return (
         <article className="product">
-        <Link to={`product/${props.product.id}`} className="card__link">
+        <Link to={`product/${product.id}`} className="card__link">
             <div className="thumbnails"> 
-                <img src={props.product.cover} className="productImage" alt=""/>
+                <img src={product.cover} className="productImage" alt=""/>
                 <div className="titleBackground">
-                    <h2 className="productTitle">{props.product.title}
+                    <h2 className="productTitle">{product.title}
                     </h2>
                 </div>
             </div>
