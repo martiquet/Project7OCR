@@ -21,7 +21,6 @@ const Productitems = (props) => {
                 {/* Get all tags from product data  */}
                 {product.tags.map((tag) => (
                   <li key={tag} className="tags">
-                    {" "}
                     {tag}
                   </li>
                 ))}
