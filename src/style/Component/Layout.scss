@@ -30,6 +30,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 75px;
 
     .nav__link {
       color: #ff6060;
@@ -46,10 +47,6 @@ header {
       font-weight: 500;
       font-size: 24px;
       text-decoration: underline;
-    }
-
-    .nav__link:last-of-type {
-      margin-left: 57px;
     }
   }
 }
@@ -89,13 +86,15 @@ footer {
       height: 47px;
     }
     nav {
+      gap: 10px;
       .nav__link {
         font-size: 12px;
         line-height: 17.11px;
       }
 
-      .nav__link:last-of-type {
-        margin-left: 10px;
+      .nav__active {
+        font-size: 12px;
+        line-height: 17.11px;
       }
     }
   }
