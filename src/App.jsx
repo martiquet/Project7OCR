@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom'
 
 import "./style/main.scss"
 import "./style/normalize.css"
@@ -20,7 +20,6 @@ function App () {
                         <Route index element={<Home />} />
                         <Route path="/About" element={<About />} />
                         <Route path="/product/:productId" element={<Product />} />
-                        <Route path="/kaza" element={<Navigate to="/" replace />} />
                     </Routes>
                     </Layout>
                 </Router>
