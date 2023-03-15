@@ -1,45 +1,32 @@
 import React from "react";
-import Ratingempty from "../assets/ratingempty.svg";
-import Rating from "../assets/ratings.svg";
 import Collapse from "./Collapse";
+import Ratings from "./Ratings";
+import Tags from "./Tag";
+import Titleproduct from "./Titleproduct";
+import Host from "./Host"
 
 // Creat product component - get data from props
-const Productitems = (props) => {
-  const product = props.product;
-
+const Productitems = ({product}) => {
   return (
     <div className="productwrapper">
       <div className="wrapperleftright">
         <div className="wrapperleft">
-          <div className="titlelocation">
-            <h1 className="producttitle">{product.title}</h1>
-            <p className="lieux">{product.location}</p>
-          </div>
+          <Titleproduct product={product}/>
           <div className="wrappertag">
             <div className="taglist">
               <ul className="listtag">
                 {/* Get all tags from product data  */}
-                {product.tags.map((tag) => (
-                  <li key={tag} className="tags">
-                    {tag}
-                  </li>
+                {product.tags.map((tag, index) => (
+                  <Tags key={index} tag={tag} />
                 ))}
               </ul>
             </div>
           </div>
         </div>
         <div className="wrapperright">
-          <div className="host">
-            <p className="host__name">{product.host.name}</p>
-            <img src={product.host.picture} className="host__image" alt="" />
-          </div>
+          <Host product={product.host}/>
           <div className="ratings">
-            {/* Ask for each pictures the value of rating in product data */}
-            <img src={product.rating >= 1 ? Rating : Ratingempty} alt="" />
-            <img src={product.rating >= 2 ? Rating : Ratingempty} alt="" />
-            <img src={product.rating >= 3 ? Rating : Ratingempty} alt="" />
-            <img src={product.rating >= 4 ? Rating : Ratingempty} alt="" />
-            <img src={product.rating >= 5 ? Rating : Ratingempty} alt="" />
+            <Ratings rating={product.rating} />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from "../assets/Kasalogo.svg";
 
 const Header = () => {
@@ -11,12 +11,12 @@ const Header = () => {
         </Link>
       </nav>
       <nav className="wrapper__nav">
-        <Link className="nav__link" to="/">
+        <NavLink className={({isActive}) => isActive ? "nav__active" : "nav__link"} to="/">
           Accueil
-        </Link>
-        <Link className="nav__link" to="/About">
+        </NavLink>
+        <NavLink className={({isActive}) => isActive ? "nav__active" : "nav__link"} to="/About">
           A propos
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );
