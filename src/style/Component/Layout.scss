@@ -120,12 +120,17 @@ footer {
     }
 
     nav {
+      gap: 15px;
       .nav__link {
         font-size: 3vw;
       }
-      .nav__link:last-of-type {
-        margin-left: 2.8vw;
+
+      .nav__active {
+        font-size: 3vw;
+        line-height: 17.11px;
+        
       }
+      
     }
   }
 
