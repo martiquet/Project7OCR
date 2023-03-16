@@ -6,7 +6,7 @@ import Productcard from "../components/Card";
 import Dataproduct from "../data.json";
 
 // Create page Home
-function App() {
+const Home = () => {
   return (
     <>
       <Banner />
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
